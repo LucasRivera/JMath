@@ -84,4 +84,11 @@ public class Polar {
 		r/=p.getDoubleRadius();
 		rad-=p.getDoubleRadiant();
 	}
+	public static Polar invrt(Polar p){
+		return new Polar(1.0/p.r,-p.rad);
+	}
+	public void invrt(){
+		r = 1.0/r;
+		rad = -rad;
+	}
 }
